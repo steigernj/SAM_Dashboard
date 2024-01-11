@@ -8,7 +8,7 @@ st.set_page_config(layout="wide")
 
 @st.cache_data()
 def load_data():
-    data = pd.read_csv(r'./ContractOpportunitiesFullCSV.csv', encoding='ISO-8859-1', dtype={
+    data = pd.read_csv(r'./ContractOpportunitiesFullCSV_VOSB.csv', encoding='ISO-8859-1', dtype={
         'NaicsCode':'str',
         'AwardDate':'str',
         # 'Award$':'float'
