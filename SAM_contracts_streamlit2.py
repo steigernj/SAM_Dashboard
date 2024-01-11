@@ -75,7 +75,7 @@ award_notice_pivot = award_data.groupby('NaicsCode').agg(
 ).reset_index()
 st.dataframe(award_notice_pivot, use_container_width=True)
 
-award_notice_plot_sum = plt.bar(award_notice_pivot, x='NaicsCode', y='Sum', title='Average Award Amount by Naics Code')
+award_notice_plot_sum = plt.bar(award_notice_pivot, x='NaicsCode', y='Sum', title='Sum Total Award Amount by Naics Code')
 award_notice_plot_sum.update_xaxes(type='category')
 
 st.plotly_chart(award_notice_plot_sum, use_container_width=True)
